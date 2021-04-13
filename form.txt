@@ -1,0 +1,164 @@
+<div style="text-align: center; font-family: DejaVu Sans, 'Lato', sans-serif;">
+  <p><br /></p>
+  <h1 style="font-weight: lighter; margin-bottom: 0;">{app_name}</h1>
+  <br />
+  <small>Recibo de Venta</small>
+  <br />
+  <h3 style="text-align:center;">RECIBO</h3>
+</div>
+<!--header bottom start-->
+<div
+  style="margin-bottom:-30px; height:230px; width: 100%; overflow: hidden; display: block; font-family: DejaVu Sans, 'Lato', sans-serif;"
+>
+  <div style="float:left; width: 50%;">
+    <p style="font-weight:bold;">
+      <span style="font-size: 18px;">No: </span
+      ><span style="font-size: 18px;">{invoice_id}</span>
+    </p>
+    <span style="font-size: 18px;"> </span>
+    <p style="font-weight:bold;">
+      <span style="font-size: 18px;">Cliente: </span
+      ><span style="font-size: 18px;">{customer_name}</span>
+    </p>
+    <span style="font-size: 18px;"> </span>
+    <p style="font-weight:bold;">
+      <span style="font-size: 18px;">Por: </span
+      ><span style="font-size: 18px;">{employee_name}</span>
+    </p>
+    <span style="font-size: 18px;"> </span>
+    <p style="font-weight:bold;">
+      <span style="font-size: 18px;">Telefono: </span
+      ><span style="font-size: 18px;">{phone_number}</span>
+    </p>
+    <span style="font-size: 18px;"> </span>
+    <p style="font-weight:bold;">
+      <span style="font-size: 18px;">Direccion: </span
+      ><span style="font-size: 18px;">{address}</span>
+    </p>
+    <span style="font-size: 18px;"> </span>
+    <p style="font-weight:bold;">
+      <span style="font-size: 18px;">NIT: </span
+      ><span style="font-size: 18px;">{tin}</span>
+    </p>
+
+    <p style="font-weight:bold;"><br /></p>
+    <span style="font-size: 18px;"> </span>
+  </div>
+  <span style="font-size: 18px;"> </span>
+  <div style="float:right; width: 45%;">
+    <span style="font-size: 18px;"> </span>
+    <p style="font-weight:bold; text-align: right;">
+      <span style="font-size: 18px;">Fecha : </span
+      ><span style="font-size: 18px;">{date}</span>
+    </p>
+    <p style="font-weight:bold; text-align: right;">
+      <span style="font-size: 18px;">Hora : </span
+      ><span style="font-size: 18px;">{time}</span>
+    </p>
+    <span style="font-size: 18px;"> </span>
+  </div>
+  <span style="font-size: 18px;"> </span>
+</div>
+<span style="font-size: 18px;"> </span>
+<p style="width: 100%; padding-bottom: 10px;">
+  <span style="font-weight: bold; font-size: 18px;">Nota: </span
+  ><span style="overflow-wrap: break-word; font-size: 18px;">{note}</span>
+</p>
+<br />
+<table
+  style="border-top: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf; border-collapse: collapse; font-weight:500; width: 100%; max-width: 100%; margin-bottom: 0; background-color: transparent; font-family: DejaVu Sans,'Lato', sans-serif;"
+>
+  <tbody>
+    <tr>
+      <th
+        style="text-align: left; padding: 7px 0; border-bottom: 1px solid #bfbfbf; width: 40%;"
+      >
+        <span style="font-size: 18px;">Items</span>
+      </th>
+      <th
+        style="text-align: right; padding: 7px 0; border-bottom: 1px solid #bfbfbf;"
+      >
+        <span style="font-size: 18px;">Qty</span>
+      </th>
+      <th
+        style="text-align: right; padding: 7px 0; border-bottom: 1px solid #bfbfbf;"
+      >
+        <span style="font-size: 18px;">Precio</span>
+      </th>
+      <th
+        style="text-align: right; padding: 7px 0; border-bottom: 1px solid #bfbfbf;"
+      >
+        <span style="font-size: 18px;">Descuento</span>
+      </th>
+      <th
+        style="text-align: right; padding: 7px 0; border-bottom: 1px solid #bfbfbf;"
+      >
+        <span style="font-size: 18px;">Total</span>
+      </th>
+    </tr>
+    <tr>
+      <td style="padding: 7px 0;" class="text-center" colspan="5">
+        <span style="font-size: 18px;">{item_details}</span>
+      </td>
+    </tr>
+    <tr>
+      <th style="text-align: left; padding: 7px 0;">
+        <span style="font-size: 18px;">Sub Total</span>
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <td style="text-align: right; padding: 7px 0;">
+        <span style="font-size: 18px;">{sub_total}</span>
+      </td>
+    </tr>
+    <tr>
+      <!-- <th style="text-align: left; padding: 7px 0;">Tax</th>
+<th></th>
+<th></th>
+<th></th>
+<td style="text-align: right; padding: 7px 0;">{tax}</td> -->
+    </tr>
+    <tr>
+      <th style="text-align: left; padding: 7px 0;">
+        <span style="font-size: 18px;">Descuento</span>
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <td style="text-align: right; padding: 7px 0;">
+        <span style="font-size: 18px;">{discount}</span>
+      </td>
+    </tr>
+    <tr>
+      <th style="text-align: left;  padding: 7px 0;">
+        <span style="font-size: 18px;">Total</span>
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <td style="text-align: right; padding: 7px 0;">
+        <span style="font-size: 18px;">{total}</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 0;" class="text-center" colspan="5">
+        <span style="font-size: 18px;">{payment_details}</span>
+      </td>
+    </tr>
+    <tr>
+      <th style="text-align: left; padding: 7px 0;">
+        <span style="font-size: 18px;">Cambio</span>
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <td style="text-align: right; padding: 7px 0;">
+        <span style="font-size: 18px;">{exchange}</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="padding: 7px 0;" class="text-center"><br /></div>
+<br />
+<div style="text-align: center">{barcode}</div>
